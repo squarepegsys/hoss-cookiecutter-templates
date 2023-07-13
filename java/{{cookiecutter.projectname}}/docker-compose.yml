@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+
+  db:
+    image: postgres:11.10
+    volumes:
+      - /tmp/lima/{{cookiecutter.db_name}}:/var/lib/postgresql/data/
+    ports:
+      - "0.0.0.0:5432:5432"
+
+    environment:
+      POSTGRES_DB: {{cookiecutter.db_name}}
+      POSTGRES_PASSWORD: password
