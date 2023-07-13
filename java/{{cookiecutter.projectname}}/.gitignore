@@ -37,5 +37,3 @@ out/
 .vscode/
 
 ### mike's stuff
-.envrc
-shell.nix
